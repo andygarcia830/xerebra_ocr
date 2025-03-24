@@ -340,11 +340,12 @@ def process_file(uploaded_file):
     pages = None
 
     print(f'UPLOAD {uploaded_file}')
-    if is_image_pdf(uploaded_file):
-        pages = convert_from_path(uploaded_file, 300)
-    elif is_image_file(uploaded_file):
+    # if is_image_pdf(uploaded_file):
+    #     pages = convert_from_path(uploaded_file, 300)
+    if is_image_file(uploaded_file):
         pages = [Image.open(uploaded_file)]
-    time.sleep(1)
+    else:
+        pages = convert_from_path(uploaded_file, 300)
     processed, confidence = ocr(pages, 1, row_threshold = 10, confidence_threshold=-1)
     os.remove(uploaded_file)
     # print(processed)
