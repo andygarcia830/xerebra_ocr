@@ -343,8 +343,8 @@ def process_file(uploaded_file):
         pages = convert_from_path(uploaded_file, 300)
     elif is_image_file(uploaded_file):
         pages = [Image.open(uploaded_file)]
-    os.remove(uploaded_file)
     processed, confidence = ocr(pages, 1, row_threshold = 10, confidence_threshold=-1)
+    os.remove(uploaded_file)
     # print(processed)
     confidence = confidence * 100
     pre = preprocess(processed)
