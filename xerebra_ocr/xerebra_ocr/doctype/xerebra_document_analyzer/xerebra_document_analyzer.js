@@ -61,7 +61,6 @@ frappe.ui.form.on("Xerebra Document Analyzer", {
                 }
                 frm.doc.upload_imageimage_pdf = ''
                 frm.refresh_field('upload_imageimage_pdf')
-                frappe.validated = false;
             }
         })
     }
