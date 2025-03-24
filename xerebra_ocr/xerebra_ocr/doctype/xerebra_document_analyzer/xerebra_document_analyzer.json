@@ -40,10 +40,11 @@
    "read_only": 1
   }
  ],
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-03-24 19:38:57.391822",
+ "modified": "2025-03-24 20:04:29.616672",
  "modified_by": "Administrator",
  "module": "Xerebra OCR",
  "name": "Xerebra Document Analyzer",

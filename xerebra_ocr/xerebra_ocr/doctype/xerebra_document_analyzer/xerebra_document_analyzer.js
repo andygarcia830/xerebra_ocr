@@ -4,9 +4,6 @@
 frappe.ui.form.on("Xerebra Document Analyzer", {
 	refresh(frm) {
         frm.disable_save();
-        frm.page.sidebar.remove();
-        frm.page.wrapper.find(".comment-box").css({'display':'none'});
-        frm.page.wrapper.find(".timeline-items").css({'display':'none'});
         frappe.call({method:'xerebra_ocr.xerebra_ocr.doctype.xerebra_document_analyzer.xerebra_document_analyzer.get_quota_display',
             args:{
             },
