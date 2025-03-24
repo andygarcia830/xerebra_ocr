@@ -311,7 +311,10 @@ def json_to_html_table(json_data, table_id="data_table", table_class=""):
                     for transaction in transactions:
                         html += "<tr>"
                         for key_tr in keys_tr:
-                            html += "<td>" + transaction[key_tr] + "</td>"
+                            try:
+                                html += "<td>" + transaction[key_tr] + "</td>"
+                            except:
+                                html += "<td></td>"
                         html += "</tr>"
                 else:
                     for transaction in transactions:
