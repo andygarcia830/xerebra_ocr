@@ -227,7 +227,15 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
-
+add_to_apps_screen = [
+	{
+		"name": "xerebra_ocr",
+		"logo": "/assets/xerebra_ocr/X_logo_square.svg",
+		"title": "Xerebra OCR",
+		"route": "/xerebra_ocr",
+		"has_permission": "xerebra_ocr.permissions.check_app_permission"
+	}
+]
 
 fixtures = [
     # export only those records that match the filters from the Role table
