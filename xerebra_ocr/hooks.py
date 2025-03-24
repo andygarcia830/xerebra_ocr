@@ -229,7 +229,7 @@ app_license = "mit"
 
 add_to_apps_screen = [
 	{
-		"name": "xerebra_ocr",
+		"name": "/app/xerebra-document-analyze",
 		"logo": "/assets/xerebra_ocr/X_logo_square.svg",
 		"title": "Xerebra OCR",
 		"route": "/app/xerebra-document-analyzer",
