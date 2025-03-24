@@ -1,0 +1,9 @@
+pdf2image
+numpy
+langchain
+langchain-openai
+openai
+gradio
+pillow
+pymupdf
+google-cloud-vision
