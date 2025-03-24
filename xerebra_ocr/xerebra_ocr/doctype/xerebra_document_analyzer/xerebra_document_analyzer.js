@@ -23,7 +23,7 @@ frappe.ui.form.on("Xerebra Document Analyzer", {
         })
 
 	},
-    after_save: function(frm) {
+    before_save: function(frm) {
         console.log('ATTACH '+frm.doc.upload_imageimage_pdf)
         if (!frm.doc.upload_imageimage_pdf || frm.doc.upload_imageimage_pdf == '' ) {
             console.log('INSIDE ATTACH '+frm.doc.upload_imageimage_pdf)
@@ -61,6 +61,7 @@ frappe.ui.form.on("Xerebra Document Analyzer", {
                         }
                     })
                 }
+                frm.doc.upload_imageimage_pdf = ''
             }
         })
     }
