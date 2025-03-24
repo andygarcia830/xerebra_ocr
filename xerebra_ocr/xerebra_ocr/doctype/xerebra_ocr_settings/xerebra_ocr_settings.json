@@ -8,7 +8,6 @@
   "section_break_qqnk",
   "google_cloud_service_account_json",
   "openai_api_key",
-  "document_limit",
   "users"
  ],
  "fields": [
@@ -27,11 +26,6 @@
    "label": "OpenAI API Key"
   },
   {
-   "fieldname": "document_limit",
-   "fieldtype": "Int",
-   "label": "Document Limit"
-  },
-  {
    "fieldname": "users",
    "fieldtype": "Table",
    "label": "Users",
@@ -41,7 +35,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-03-24 14:25:40.357872",
+ "modified": "2025-03-24 16:36:28.354863",
  "modified_by": "Administrator",
  "module": "Xerebra OCR",
  "name": "Xerebra OCR Settings",
