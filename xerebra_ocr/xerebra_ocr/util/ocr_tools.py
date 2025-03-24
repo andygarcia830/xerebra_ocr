@@ -299,7 +299,7 @@ def json_to_html_table(json_data, table_id="data_table", table_class=""):
     # Create table rows
     for key in keys:
         if (key == 'Transactions'):
-            html += "<tr><td>" + key + "</td><td></td>"
+            html += "<tr><td><b>" + key + "</b></td><td></td>"
             transactions = json_data[key]
             if len(transactions) > 0:
                 # Assume key-values are consitent
@@ -307,7 +307,7 @@ def json_to_html_table(json_data, table_id="data_table", table_class=""):
                     keys_tr = transactions[0].keys()
                     html += "<tr>"
                     for key_tr in keys_tr:
-                        html += "<td>" + key_tr+ "</td>"
+                        html += "<td><b>" + key_tr+ "</b></td>"
                     html += "</tr>"
                     for transaction in transactions:
                         html += "<tr>"
@@ -327,7 +327,7 @@ def json_to_html_table(json_data, table_id="data_table", table_class=""):
 
 
         else:
-            html += "<tr><td>" + key + "</td>"
+            html += "<tr><td><b>" + key + "</b></td>"
             html += f"<td>{_format_value(json_data[key])}</td>"
             html += "</tr>"
     html += "</tbody></table>"
