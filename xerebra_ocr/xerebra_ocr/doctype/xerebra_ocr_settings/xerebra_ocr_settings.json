@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-24 10:15:28.991399",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_qqnk",
+  "google_cloud_service_account_json",
+  "openai_api_key",
+  "document_limit",
+  "users"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_qqnk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "google_cloud_service_account_json",
+   "fieldtype": "Attach",
+   "label": "Google Cloud Service Account JSON"
+  },
+  {
+   "fieldname": "openai_api_key",
+   "fieldtype": "Data",
+   "label": "OpenAI API Key"
+  },
+  {
+   "fieldname": "document_limit",
+   "fieldtype": "Int",
+   "label": "Document Limit"
+  },
+  {
+   "fieldname": "users",
+   "fieldtype": "Table",
+   "label": "Users",
+   "options": "Xerebra OCR User"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-03-24 14:25:40.357872",
+ "modified_by": "Administrator",
+ "module": "Xerebra OCR",
+ "name": "Xerebra OCR Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

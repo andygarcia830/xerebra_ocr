@@ -227,3 +227,11 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+
+fixtures = [
+    # export only those records that match the filters from the Role table
+    {"dt": "Role", "filters": [["role_name", "like", "Xerebra OCR User"]]},
+    {"dt": "Custom DocPerm","filters": [["role","like","Xerebra OCR%"]]},
+	{"dt": "Module Profile", "filters": [["module_profile_name", "like", "Xerebra OCR %"]]},
+    ]

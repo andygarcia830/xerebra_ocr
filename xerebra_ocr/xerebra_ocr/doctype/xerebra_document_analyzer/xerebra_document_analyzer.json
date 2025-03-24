@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-03-24 10:26:16.726856",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_pyui",
+  "usage",
+  "document_type",
+  "upload_imageimage_pdf",
+  "output"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_pyui",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "upload_imageimage_pdf",
+   "fieldtype": "Attach",
+   "label": "Upload Image/Image PDF"
+  },
+  {
+   "fieldname": "output",
+   "fieldtype": "HTML",
+   "label": "Output"
+  },
+  {
+   "default": "Bank Statement",
+   "fieldname": "document_type",
+   "fieldtype": "Select",
+   "label": "Document Type",
+   "options": "Bank Statement"
+  },
+  {
+   "fieldname": "usage",
+   "fieldtype": "Data",
+   "label": "Usage",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2025-03-24 15:12:18.650722",
+ "modified_by": "Administrator",
+ "module": "Xerebra OCR",
+ "name": "Xerebra Document Analyzer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

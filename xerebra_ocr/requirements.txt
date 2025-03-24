@@ -3,7 +3,7 @@ numpy
 langchain
 langchain-openai
 openai
-gradio
 pillow
 pymupdf
+fitz
 google-cloud-vision
