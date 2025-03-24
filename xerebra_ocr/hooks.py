@@ -232,7 +232,7 @@ add_to_apps_screen = [
 		"name": "xerebra_ocr",
 		"logo": "/assets/xerebra_ocr/X_logo_square.svg",
 		"title": "Xerebra OCR",
-		"route": "/xerebra_ocr",
+		"route": "/app/xerebra-document-analyzer",
 		"has_permission": "xerebra_ocr.permissions.check_app_permission"
 	}
 ]
