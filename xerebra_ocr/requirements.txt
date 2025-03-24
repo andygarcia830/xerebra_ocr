@@ -5,5 +5,5 @@ langchain-openai
 openai
 pillow
 pymupdf
-fitz
+opencv-python
 google-cloud-vision

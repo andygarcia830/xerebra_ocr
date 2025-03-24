@@ -52,7 +52,7 @@ def get_quota_display():
 def get_quota():
 	print(f'USER {frappe.session.user}')
 	if frappe.session.user == 'Administrator':
-		return 'Unlimited'
+		return (1,0)
 	result = frappe.db.sql('SELECT quota, used FROM `tabXerebra OCR User` WHERE user = %s', (frappe.session.user,))
 	# Retrieve the data
 	# ocr_user = frappe.get_doc('Xerebra OCR User', frappe.session.user)
